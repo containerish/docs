@@ -21,8 +21,9 @@ Before understanding how containers work, let's understand how the application d
 	Containers reside in App layer, holding your code and dependencies together. Multiple containers can run on a single machine and share the same Operating system kernel and thus unlike virtualization take up less space, can handle more apps and require less resources.
 	Each container runs as an isolated process in user space.
 
-	Now that we have a basic understanding of what it looks like, let's see what are the challenges we face with traditional approach and how containers solve them:
+## Problems with Traditional Approach and how Containers solve them
 
+ Now that we have a basic understanding of what it looks like, let's see what are the challenges we face with traditional approach and how containers solve them:
  Running an application on a server comprises of 2 things - 
  building the application and deploying the application on the server.
  
