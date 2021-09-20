@@ -1,7 +1,7 @@
 ---
 lang: en-US
-title: Changelog
-description: Changelog for OpenRegistry
+title: Home
+description: Landing page
 ---
 
 # Open Registry
