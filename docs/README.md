@@ -1,3 +1,9 @@
+---
+lang: en-US
+title: Changelog
+description: Changelog for OpenRegistry
+---
+
 # Open Registry
 
 <img src="../assets/openRegistry.gif" alt="" width="800" border="2px"/>

@@ -1,3 +1,9 @@
+---
+lang: en-US
+title: Contact
+description: Our social handles and github
+---
+
 # Contact
 
 OpenRegistry is a part of Containerish organization. We are a small team of software engineers working 

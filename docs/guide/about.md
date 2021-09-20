@@ -1,3 +1,9 @@
+---
+lang: en-US
+title: About
+description: About OpenRegistry
+---
+
 # About - OpenRegistry
 
 We are a small team of developers working towards decentralizing the container experience.

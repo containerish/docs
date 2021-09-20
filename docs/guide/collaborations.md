@@ -1,3 +1,9 @@
+---
+lang: en-US
+title: Collaborations
+description: Teams we are collaborating with and contribution details
+---
+
 # Collaborations
 
 We are supported by Akash and Skynet. We use Akash compute and Skynet storage to fulfill our deployment needs.
