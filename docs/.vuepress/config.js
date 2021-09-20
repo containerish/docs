@@ -1,5 +1,7 @@
 module.exports = {
   //base: 'https://blog.openregistry.dev'
+  base: '/',
+  head: [['link', { rel: 'icon', href: 'https://parachute.openregistry.dev/static/media/parachute.4575caeb.png'}]],
   lang: 'en-US',
   title: "Open Registry Blog",
   description: "A decentralised container registry fully compliant with OCI Distribution Specification",
@@ -8,7 +10,7 @@ module.exports = {
     darkMode: true,
     repo: 'https://github.com/containerish',
     editLink: false,
-    logo: 'https://avatars.githubusercontent.com/u/90045228?v=4&s=200',
+    logo: 'https://parachute.openregistry.dev/static/media/parachute.4575caeb.png',
     contributors: true,
     sidebar: [
       {
