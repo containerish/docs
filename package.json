@@ -1,0 +1,17 @@
+{
+  "name": "open-registry-blog",
+  "version": "1.0.0",
+  "description": "A decentralised container registry fully compliant with OCI Distribution Specification",
+  "main": "index.js",
+  "repository": "git@github.com:containerish/blog.git",
+  "author": "guacamole <gunjanwalecha@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev --host 0.0.0.0 docs",
+    "docs:build": "vuepress build docs"
+  },
+  "private": false,
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.26"
+  }
+}
