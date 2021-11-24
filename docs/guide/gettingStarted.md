@@ -27,7 +27,7 @@ Sign-up process is currently disabled and invitations are sent out which can be 
 
 ### Sign-In
 
-You can use OpenRegistry credentials to sign-in using docker CLI or the OpenRegistry frontend at [parachute](https://parachute.openregistry.dev)
+You can use OpenRegistry credentials to sign-in using docker CLI or the OpenRegistry frontend at [OpenRegistry](https://parachute.openregistry.dev)
     
 - For docker CLI: 
 ```bash
@@ -35,20 +35,42 @@ docker login beta.openregistry.dev
 Username: janedoe
 Password: ***********
 ```
+- For Web: <br>
+We are working on adding login with github, gitlab, etc. 
+In the meantime, use Email and Password to login through web. (these credentials will be shared with you through the invitation email)
+```bash
+Email: janedoe@gmail.com
+Password: ***********
+```
 
 ### Push an Image
 
-By default, the images are pushed to DockerHub. For Pushing images to OpenRegistry instead, follow the below steps:
-* change the name of your image, e.g you have an image named janedoe/alpine:latest, change it like so:
+By default, the images are pushed to DockerHub. 
+For Pushing images to OpenRegistry instead, follow the below steps:
+* Add "beta.openregistry.dev" prefix to every image that has to go to OpenRegistry
+* Prefix the image name with your username (this username is same as the one you'll receive through the invitation email)
+* For example, you have an **alpine:latest** image that you wish to push to OpeRegistry, use the following to tag the image:
+```bash
+docker tag <image-name>:<tag> beta.openregistry.dev/<username>/<image-name>:<tag>
+```
+
+so for user: janedoe and image: alpine:latest, the command will be
 
 ```bash
-docker tag janedoe/alpine:latest beta.openregistry.dev/janedoe/alipne:latest
+docker tag alpine:latest beta.openregistry.dev/janedoe/alpine:latest
+```
+
+Pushing the image works the same way as docker 
+
+```bash
 docker push beta.openregistry.dev/janedoe/alpine:latest
 ```
 
 ### Pull an Image
 
-Assuming you've pushed an image using the above method:
+For pull Operations, all you have to do is copy the docker pull command for any image 
+from OpenRegistry and run it as it is in your terminal.<br>
+To pull the above image from OpenRegistry:
 
 ```bash
 docker pull beta.openregistry.dev/janedoe/alpine:latest
