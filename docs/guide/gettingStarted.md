@@ -10,60 +10,65 @@ Working with OpenRegistry is no different than working with any other container 
 We'd love for you to try and use OpenRegistry and provide feedback.
 Following are the steps to get started:
 
-### Register for Beta
-
-Register yourself for our beta program at [OpenRegistry Beta](https://parachute.openregistry.dev/). We'll send out an invitation on your email with credentials which you can use to test Pull and Push on OpenRegistry
-
-### Video Guide
-
-Once you've got your credentials, you can follow the following guide or watch this video: 
-<iframe src="https://player.vimeo.com/video/574351825" width="80%" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-
 ### Sign-up
 
-The sign process is essential as pushing to container repositories is a restricted operation and requires proper authorization.
-Sign-up process is currently disabled and invitations are sent out which can be used to directly sign in.
+The sign-up process is essential as `Pushing` to container repositories is a restricted operation and requires proper authorization.
+You can still browse through and `pull` container images on OpenRegistry if you do not wish to sign-up :) .
+Once you sign-up, you'll receive an Email verification link which is essential to activate your account.
 
 ### Sign-In
 
-You can use OpenRegistry credentials to sign-in using docker CLI or the OpenRegistry frontend at [OpenRegistry](https://parachute.openregistry.dev)
-    
-- For docker CLI: 
+Once Signed-up and with your email verified, you should be directed to OpeRegistry logged in and thus enabling you to 
+unleash the power of `Pushing` container images
+
+In addition to the above method, you can also choose to sign-in with Github which is literally the shortest and easiest 
+way to connect with OpenRegistry
+
+### Using docker CLI: 
+Now comes a very tiny part which might feel a bit tricky. If you have signed-up with email and normal flow, 
+you can use the same username and password for Docker Login.
+However, with Github you'll have to generate a PAT (Personal Access Token) which will serve as your password for Docker 
+Login. Don't be spooked by it, it's super simple. Just follow this guide for  
+[Github PATs](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+and you should be sorted. If you still find it difficult, we're here to help so just Hit Us Up!! 👍🏻
+
+**To summarise**: 
+* for normal auth flow (through sign-up/sign-in)
 ```bash
-docker login beta.openregistry.dev
+docker login openregistry.dev
 Username: janedoe
-Password: ***********
-```
-- For Web: <br>
-We are working on adding login with github, gitlab, etc. 
-In the meantime, use Email and Password to login through web. (these credentials will be shared with you through the invitation email)
+Password: <Password you used to sign-up>
+````
+
+* for Github flow (Sign-in with Github)
 ```bash
-Email: janedoe@gmail.com
-Password: ***********
-```
+docker login openregistry.dev
+Username: janedoe
+Password: <PAT from Github>
+````
 
 ### Push an Image
 
-By default, the images are pushed to DockerHub. 
-For Pushing images to OpenRegistry instead, follow the below steps:
-* Add "beta.openregistry.dev" prefix to every image that has to go to OpenRegistry
-* Prefix the image name with your username (this username is same as the one you'll receive through the invitation email)
+By default with `docker push` the images are pushed to DockerHub. 
+For Pushing images to OpenRegistry instead, the image must be tagged first:
+* Add "openregistry.dev" prefix to every image that has to go to OpenRegistry
+* Prefix the image name with your username (or Github Username when you sign-up with Github)
 * For example, you have an **alpine:latest** image that you wish to push to OpeRegistry, use the following to tag the image:
+* 
 ```bash
-docker tag <image-name>:<tag> beta.openregistry.dev/<username>/<image-name>:<tag>
+docker tag <image-name>:<tag> openregistry.dev/<username>/<image-name>:<tag>
 ```
 
-so for user: janedoe and image: alpine:latest, the command will be
+so for user: **janedoe** and image: **alpine:latest**, the command will be
 
 ```bash
-docker tag alpine:latest beta.openregistry.dev/janedoe/alpine:latest
+docker tag alpine:latest openregistry.dev/janedoe/alpine:latest
 ```
 
 Pushing the image works the same way as docker 
 
 ```bash
-docker push beta.openregistry.dev/janedoe/alpine:latest
+docker push openregistry.dev/janedoe/alpine:latest
 ```
 
 ### Pull an Image
@@ -73,12 +78,13 @@ from OpenRegistry and run it as it is in your terminal.<br>
 To pull the above image from OpenRegistry:
 
 ```bash
-docker pull beta.openregistry.dev/janedoe/alpine:latest
+docker pull openregistry.dev/janedoe/alpine:latest
 ```
 
 ### How to Run this project locally
 
-OpenRegistry is not Go Gettable right now because of a dependency issue with Go-Skynet. To build this project locally, please use the following method:
+OpenRegistry is not Go Gettable right now because of a dependency issue with Go-Skynet. 
+To build this project locally, please use the following method:
 
 ```bash
 git clone https://github.com/containerish/OpenRegistry.git
