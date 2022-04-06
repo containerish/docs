@@ -19,5 +19,5 @@ Let's first understand how we operate:
 * We use Akash for compute which is a decentralized cloud provider offering their services for a very affordable price
 *  Secondly we use Skynet as our storage layer which again is a part of Decentralized internet movement and offers services for a very reasonable price.
 
-With OpenRegistry, we want to promote and build around such ecosystems to help provide best of the services to Developers without having to worry about rate limiting, changing their developer workflow or paying too much. We are trying to build a model which when reaches it's goal will make it almost free to use OpenRegistry forever. Simply put, the price is inversely proportional to the number of users we get.<br>
-Check out our community proposal for details on: [OpenRegistry Community Proposal](https://forum.akash.network/t/openregistry-community-proposal/684)
+With OpenRegistry, we want to promote and build around such ecosystems to help provide best of the services to Developers without having to worry about rate limiting, changing their developer workflow or paying too much. We are trying to build a model which when reaches it's goal will make it almost free to use 
+OpenRegistry forever. Simply put, the price is inversely proportional to the number of users we get.<br>
