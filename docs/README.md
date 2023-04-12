@@ -15,7 +15,7 @@ We're motivated to take on centralized services and making them decentralized. O
 We are committed to bring the change and make this product for people by people.
 
 
-<img src="../assets/OpenRegistryNew.gif" alt="" width="800" border="2px"/>
+<img src="../assets/docs.png" alt=""/>
 
 
 ## Why yet another Container Registry?
