@@ -1,0 +1,24 @@
+<script>
+</script>
+
+<svg
+	id="Layer_1"
+	data-name="Layer 1"
+	viewBox="0 0 24 24"
+	stroke-width="1.5"
+	width="20"
+	height="24"
+	color="#50557c"
+	><defs
+		><style>
+			.cls-63ce7424ea57ea6c8380058e-1 {
+				fill: none;
+				stroke: currentColor;
+				stroke-miterlimit: 10;
+			}
+		</style></defs
+	><line class="cls-63ce7424ea57ea6c8380058e-1" x1="21.5" y1="12" x2="0.5" y2="12" /><polyline
+		class="cls-63ce7424ea57ea6c8380058e-1"
+		points="13.86 4.36 21.5 12 13.86 19.64"
+	/></svg
+>
