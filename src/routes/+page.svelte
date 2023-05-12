@@ -34,7 +34,7 @@
 				<p class=" antialiased text-lg">
 					We have the perfect starter documentation with cute little zines check them out
 				</p>
-				<a href="/">here</a>
+				<a href="/zines">here</a>
 			</div>
 		</div>
 		<img src="/zine-docs.png" alt="zine docs" width="500px" />
@@ -92,10 +92,10 @@
 				confromance specification, which means the functionality and using CLI with OpenRegistry is
 				just like any other container registry Explore documentation
 			</p>
-			<div class="flex gap-3">
-				<a href="/">Explore Documentation</a>
+			<a href="/get-started" class="flex gap-3">
+				<span>Explore Documentation</span>
 				<ArrowRight />
-			</div>
+			</a>
 		</div>
 
 		<Terminal />

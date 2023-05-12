@@ -1,5 +1,4 @@
 <script>
-	import { browser } from '$app/environment';
 	export let data;
 
 	const { page, post } = data;
