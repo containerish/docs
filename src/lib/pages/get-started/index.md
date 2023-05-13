@@ -100,3 +100,4 @@ go build
 ```
 
 ## Next steps
+[next steps](#push-an-image)

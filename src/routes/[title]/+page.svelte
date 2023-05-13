@@ -1,7 +1,61 @@
 <script>
-	export let data;
+	import { onMount } from 'svelte';
 
-	const { page, post } = data;
+	export let data;
+	let pageToRender;
+	onMount(async () => {
+
+	const { title } = data.params;
+	const { pathname } = data.url;
+
+	const postPromise = import(`../../lib/pages/${title}/index.md`);
+	// const imageDataPromise = import(`../../lib/generated/posts/${pathname.slice(1)}.js`);
+
+	const [postResult] = await Promise.all([postPromise]);
+	const { default: page, metadata } = postResult;
+	// const { default: imageData } = imageDataResult;
+
+	if (!page) {
+		return {
+			status: 404
+		};
+	}
+
+	const {
+		datePublished,
+		featuredImage,
+		featuredImageAlt,
+		ogImage,
+		ogSquareImage,
+		postTitle,
+		seoMetaDescription,
+		twitterImage
+	} = metadata;
+
+	const result =  {
+		post: {
+			datePublished,
+			featuredImage,
+			featuredImageAlt,
+			ogImage,
+			ogSquareImage,
+			postTitle,
+			seoMetaDescription,
+			twitterImage,
+			title
+		},
+		title,
+		// imageData,
+		page
+	};
+
+	pageToRender = page
+})
+
+
+
+
+	// const { page } = data;
 </script>
 
 <div
@@ -11,5 +65,5 @@
 	lg:px-0 prose-p:font-inter prose-p:text-base prose-li:text-base prose-slate dark:prose-code:bg-tertiary-600
 	prose-a:text-sky-600 prose-li:text-slate-800 dark:prose-li:text-slate-100 prose-strong:text-indigo-500 dark:prose-strong:text-indigo-300"
 >
-	<svelte:component this={page} />
+	<svelte:component this={pageToRender} />
 </div>

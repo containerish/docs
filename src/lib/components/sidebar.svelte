@@ -1,8 +1,8 @@
 <script lang="ts">
 </script>
 
-<nav class="list-nav w-72 py-6 hidden lg:block">
-	<div class="fixed">
+<nav class="list-nav w-72 py-6 hidden lg:block" data-sveltekit-reload>
+	<div class="">
 		<span class="text-lg font-semibold ml-9 text-primary-900-50-token">Get Started</span>
 		<ul class="text-primary-900-50-token mt-3">
 			<li>
@@ -11,7 +11,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="/aaaadasf">
 					<span class="flex-auto txt"> Using Docker CLI</span>
 				</a>
 			</li>

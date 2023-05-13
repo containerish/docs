@@ -1,7 +1,9 @@
 <script lang="ts">
 </script>
 
-<div class="py-3 bg-[#19195C] dark:bg-surface-800 text-primary-100">
+<!-- 19195C -->
+
+<div class="py-3 bg-[#19195C] dark:bg-surface-800 text-primary-100 z-10">
 	<div class="mx-auto px-0 lg:px-10 py-20">
 		<div class="flex items-center justify-between gap-12 lg:gap-0">
 			<div class="mb-0 flex flex-col gap-2 lg:flex-row lg:-mb-16 lg:gap-4">

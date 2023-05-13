@@ -102,7 +102,7 @@
 	</div>
 
 	<div
-		class="bg-primary-200 dark:bg-surface-900 p-20 rounded flex flex-col lg:flex-row justify-between items-baseline gap-9"
+		class="bg-primary-100/60 dark:bg-surface-900 p-20 rounded flex flex-col lg:flex-row justify-between items-baseline gap-9"
 	>
 		<span class="text-3xl font-semibold antialiased"> A Humble Note </span>
 		<p class="lg:w-1/2 text-lg antialiased">

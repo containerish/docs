@@ -13,7 +13,7 @@
 	<svelte:fragment slot="sidebarLeft">
 		<Sidebar />
 	</svelte:fragment>
-	<div class="bg-primary-50 dark:bg-surface-800 h-full px-12">
+	<div class="bg-primary-50 dark:bg-surface-800 h-full flex px-12 relative">
 		<slot />
 	</div>
 </AppShell>
