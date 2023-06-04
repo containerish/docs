@@ -22,7 +22,7 @@ const config = defineConfig({
 				behavior: 'wrap'
 			}
 		],
-		toc
+		// toc
 	]
 });
 

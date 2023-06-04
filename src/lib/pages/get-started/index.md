@@ -24,7 +24,7 @@ unleash the power of `Pushing` container images
 In addition to the above method, you can also choose to sign-in with Github which is literally the shortest and easiest
 way to connect with OpenRegistry
 
-[signin/signup]: 
+
 ## Using docker CLI:
 
 Now comes a very tiny part which might feel a bit tricky. If you have signed-up with email and normal flow,
@@ -99,5 +99,6 @@ make mod-fix
 go build
 ```
 
-## Next steps
-[next steps](#push-an-image)
+## Up Next
+
+<a href="./containers" target="_self">Containers and Container Registries </a>

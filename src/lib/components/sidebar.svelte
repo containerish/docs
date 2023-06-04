@@ -1,10 +1,13 @@
 <script lang="ts">
+	
 </script>
 
-<nav class="list-nav w-72 py-6 hidden lg:block" data-sveltekit-reload>
+<div class="list-nav w-72 py-6 hidden lg:block sticky top-0" data-sveltekit-reload>
 	<div class="">
-		<span class="text-lg font-semibold ml-9 text-primary-900-50-token">Get Started</span>
-		<ul class="text-primary-900-50-token mt-3">
+		<a href="/get-started" class="text-lg font-semibold ml-9 text-primary-900-50-token !px-0"
+			>Get Started</a
+		>
+		<ul class="text-primary-900-50-token">
 			<li>
 				<a href="/get-started#sign-up">
 					<span class="flex-auto txt">Sign Up</span>
@@ -38,21 +41,18 @@
 		</ul>
 		<div class="h-0.5 my-3 bg-primary-200-700-token" />
 
-		<span class="text-lg font-semibold ml-9 text-primary-900-50-token">Containers</span>
-		<ul class="text-primary-900-50-token mt-3">
+		<a href="/containers" class="text-lg font-semibold ml-9 text-primary-900-50-token !px-0"
+			>Containers</a
+		>
+		<ul class="text-primary-900-50-token">
 			<li>
-				<a href="/containers#what-are-containers">
+				<a href="containers#what-are-containers-">
 					<span class="flex-auto txt">What are containers</span>
 				</a>
 			</li>
 			<li>
 				<a href="/containers#why-containers-and-how-do-they-work">
 					<span class="flex-auto txt">Why Containers</span>
-				</a>
-			</li>
-			<li>
-				<a href="/containers#problems-with-traditional-approach-and-how-containers-solve-them">
-					<span class="flex-auto txt">Problems with Traditional Approach</span>
 				</a>
 			</li>
 			<li>
@@ -63,33 +63,35 @@
 		</ul>
 		<div class="h-0.5 my-3 bg-primary-200-700-token" />
 
-		<span class="text-lg font-semibold ml-9 text-primary-900-50-token">Zines</span>
-		<ul class="text-primary-900-50-token mt-3">
+		<a href="/zines" class="text-lg font-semibold ml-9 text-primary-900-50-token !px-0">Zines</a>
+		<ul class="text-primary-900-50-token">
 			<li>
 				<a href="/zines#understanding-containers">
 					<span class="flex-auto txt"> Understanding Containers</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="/zines#what-is-openregistry">
 					<span class="flex-auto txt"> What is OpenRegistry?</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="/zines#how-does-it-work">
 					<span class="flex-auto txt"> How does it work?</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="/zines#why-do-we-need-this">
 					<span class="flex-auto txt"> Why do we need this?</span>
 				</a>
 			</li>
 		</ul>
 		<div class="h-0.5 my-3 bg-primary-200-700-token" />
 
-		<span class="text-lg font-semibold ml-9 text-primary-900-50-token">Collaborations</span>
-		<ul class="text-primary-900-50-token mt-3">
+		<a href="/collaborations" class="text-lg font-semibold ml-9 text-primary-900-50-token !px-0"
+			>Collaborations</a
+		>
+		<ul class="text-primary-900-50-token">
 			<li>
 				<a href="#">
 					<span class="flex-auto txt"> Akash Network</span>
@@ -113,8 +115,8 @@
 		</ul>
 		<div class="h-0.5 my-3 bg-primary-200-700-token" />
 
-		<span class="text-lg font-semibold ml-9 text-primary-900-50-token">Change Log</span>
-		<ul class="text-primary-900-50-token mt-3">
+		<a href="#" class="text-lg font-semibold ml-9 text-primary-900-50-token !px-0">Change Log</a>
+		<ul class="text-primary-900-50-token">
 			<li>
 				<a href="#">
 					<span class="flex-auto txt"> Progress so far</span>
@@ -123,8 +125,8 @@
 		</ul>
 		<div class="h-0.5 my-3 bg-primary-200-700-token" />
 
-		<span class="text-lg font-semibold ml-9 text-primary-900-50-token">Contact</span>
-		<ul class="text-primary-900-50-token mt-3">
+		<a href="#" class="text-lg font-semibold ml-9 text-primary-900-50-token !px-0">Contact</a>
+		<ul class="text-primary-900-50-token">
 			<li>
 				<a href="#">
 					<span class="flex-auto txt"> Contact us</span>
@@ -132,7 +134,7 @@
 			</li>
 		</ul>
 	</div>
-</nav>
+</div>
 
 <style>
 	.txt {
