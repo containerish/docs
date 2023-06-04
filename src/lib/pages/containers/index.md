@@ -14,7 +14,7 @@ In modern world of Tech, Containers are just like a handy fanny pack carrying ev
 At runtime, a container image becomes a Container. Using containers has revolutionized the application development. Running the applications using Containers is reliable, secure and portable.
 
 
-## Why Containers and How do they work ?
+## Why Containers and How do they work?
 
 Before understanding how containers work, let's understand how the application development, building and deployment took place when the containers weren't around.
 1. The traditional approach was to run the applications on in-house servers. Predicting the traffic a quarter ahead and stashing the hardware on guess game which often resulted in underutilized resources, higher costs or falling short and being unable to serve.
@@ -51,7 +51,7 @@ building the application and deploying the application on the server.
    With Containers, all you have to do is download the tarball, unpack it in a directory and run the program like any other program on your machine (all of which is handled by the container runtime). It'll work on the server, your neighbour's desktop and your colleagues laptop just like it ran on your machine.
    No more of "...but it worked on my machine" problems.
 
-## What is a Container Registry ?
+## What is a Container Registry?
 
 Sharing is caring, it's often very useful to share container images since it saves tons of effort and time. Container Registry is just about that. It's like Dropbox except instead of your dog pics and videos, it accommodates container images. There are public registries and private registries each have their own use cases. Like uploading and downloading content from Dropbox, you could Push and Pull images to and from a container registry.
 We at OpenRegistry are an Open Source container registry, find out more about us in [about](./about.md)

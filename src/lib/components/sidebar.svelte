@@ -6,28 +6,33 @@
 		<span class="text-lg font-semibold ml-9 text-primary-900-50-token">Get Started</span>
 		<ul class="text-primary-900-50-token mt-3">
 			<li>
-				<a href="/get-started">
-					<span class="flex-auto txt"> Sign-up/Sign-in</span>
+				<a href="/get-started#sign-up">
+					<span class="flex-auto txt">Sign Up</span>
 				</a>
 			</li>
 			<li>
-				<a href="/aaaadasf">
+				<a href="/get-started#sign-in">
+					<span class="flex-auto txt">Sign In</span>
+				</a>
+			</li>
+			<li>
+				<a href="/get-started#using-docker-cli">
 					<span class="flex-auto txt"> Using Docker CLI</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
-					<span class="flex-auto txt"> Push an Image</span>
+				<a href="/get-started#push-an-image">
+					<span class="flex-auto txt">Push an Image</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
-					<span class="flex-auto txt"> Pull an Image</span>
+				<a href="/get-started#pull-an-image">
+					<span class="flex-auto txt">Pull an Image</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
-					<span class="flex-auto txt"> FAQ</span>
+				<a href="/get-started#how-to-run-this-project-locally">
+					<span class="flex-auto txt">FAQ</span>
 				</a>
 			</li>
 		</ul>
@@ -36,18 +41,23 @@
 		<span class="text-lg font-semibold ml-9 text-primary-900-50-token">Containers</span>
 		<ul class="text-primary-900-50-token mt-3">
 			<li>
-				<a href="/containers">
-					<span class="flex-auto txt"> What are containers</span>
+				<a href="/containers#what-are-containers">
+					<span class="flex-auto txt">What are containers</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
-					<span class="flex-auto txt"> Why do wee need containers</span>
+				<a href="/containers#why-containers-and-how-do-they-work">
+					<span class="flex-auto txt">Why Containers</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
-					<span class="flex-auto txt"> Container Registries</span>
+				<a href="/containers#problems-with-traditional-approach-and-how-containers-solve-them">
+					<span class="flex-auto txt">Problems with Traditional Approach</span>
+				</a>
+			</li>
+			<li>
+				<a href="/containers#what-is-a-container-registry">
+					<span class="flex-auto txt">What is a Container Registry?</span>
 				</a>
 			</li>
 		</ul>
@@ -56,7 +66,7 @@
 		<span class="text-lg font-semibold ml-9 text-primary-900-50-token">Zines</span>
 		<ul class="text-primary-900-50-token mt-3">
 			<li>
-				<a href="/zines">
+				<a href="/zines#understanding-containers">
 					<span class="flex-auto txt"> Understanding Containers</span>
 				</a>
 			</li>
