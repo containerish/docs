@@ -39,9 +39,9 @@
 		</div>
 		<img src="/zine-docs.png" alt="zine docs" width="500px" />
 	</div>
-	<div class="flex flex-col lg:flex-row gap-9">
+	<div class="flex flex-col lg:flex-row gap-3">
 		<div
-			class="card bg-primary-100/60 dark:bg-surface-900/30 px-9 py-12 flex flex-col gap-9 items-start max-w-md shadow-lg"
+			class="card lg:w-1/3 bg-primary-100/60 dark:bg-surface-900/30 px-9 py-12 flex flex-col gap-9 items-start max-w-md shadow-lg"
 		>
 			<Opensource />
 			<div class="flex flex-col gap-2">
@@ -53,7 +53,7 @@
 			</div>
 		</div>
 		<div
-			class="card bg-primary-100/60 dark:bg-surface-900/30 p-9 flex flex-col gap-9 items-start max-w-md shadow-lg text-surface-900-50-token"
+			class="card lg:w-1/3 bg-primary-100/60 dark:bg-surface-900/30 p-9 flex flex-col gap-9 items-start max-w-md shadow-lg text-surface-900-50-token"
 		>
 			<Distributed />
 			<div class="flex flex-col gap-2">
@@ -66,7 +66,7 @@
 			</div>
 		</div>
 		<div
-			class="card bg-primary-100/60 dark:bg-surface-900/30 p-9 flex flex-col gap-9 items-start max-w-md shadow-lg"
+			class="card lg:w-1/3 bg-primary-100/60 dark:bg-surface-900/30 p-9 flex flex-col gap-9 items-start max-w-md shadow-lg"
 		>
 			<Earth />
 			<div class="flex flex-col gap-2">
@@ -105,13 +105,17 @@
 		class="bg-primary-100/60 dark:bg-surface-900 p-20 rounded flex flex-col lg:flex-row justify-between items-baseline gap-9"
 	>
 		<span class="text-3xl font-semibold antialiased"> A Humble Note </span>
-		<p class="lg:w-1/2 text-lg antialiased">
-			OpneRegistry is built and maintained by 2 developers. We are learning everyday and doing our
-			best to make OpenRegistry the best container registry out there and we need your support in
-			accomplishing it. If you spot a bug, typo or any other inconsistency across the platform and
-			documentation, please report it in our github discussion or write to @team.openregistry.dev.
-			We welcome cunstructive criticism too, as it will help us become better. So don't hold back in
-			any case. Lastly, thanks a lot for visiting, we hope you find this documentation informative.
-		</p>
+		<div class="lg:w-1/2">
+			<p class="text-lg antialiased">
+				OpneRegistry is built and maintained by 2 developers. We are learning everyday and doing our
+				best to make OpenRegistry the best container registry out there and we need your support in
+				accomplishing it. If you spot a bug, typo or any other inconsistency across the platform and
+				documentation, please report it in our github discussion or write to</p> 
+				<p class="text-lg antialiased"> 
+				We welcome cunstructive criticism too, as it will help us become better. So don't hold back in
+				any case. Lastly, thanks a lot for visiting, we hope you find this documentation informative.
+			</p>
+		</div>
+		
 	</div>
 </div>

@@ -1,5 +1,4 @@
 <script lang="ts">
-	
 </script>
 
 <div class="list-nav w-72 py-6 hidden lg:block sticky top-0" data-sveltekit-reload>
@@ -115,20 +114,22 @@
 		</ul>
 		<div class="h-0.5 my-3 bg-primary-200-700-token" />
 
-		<a href="#" class="text-lg font-semibold ml-9 text-primary-900-50-token !px-0">Change Log</a>
+		<a href="/changelog" class="text-lg font-semibold ml-9 text-primary-900-50-token !px-0"
+			>Change Log</a
+		>
 		<ul class="text-primary-900-50-token">
 			<li>
-				<a href="#">
+				<a href="/changelog">
 					<span class="flex-auto txt"> Progress so far</span>
 				</a>
 			</li>
 		</ul>
 		<div class="h-0.5 my-3 bg-primary-200-700-token" />
 
-		<a href="#" class="text-lg font-semibold ml-9 text-primary-900-50-token !px-0">Contact</a>
+		<a href="/about" class="text-lg font-semibold ml-9 text-primary-900-50-token !px-0">Contact</a>
 		<ul class="text-primary-900-50-token">
 			<li>
-				<a href="#">
+				<a href="/about#contact-us">
 					<span class="flex-auto txt"> Contact us</span>
 				</a>
 			</li>
