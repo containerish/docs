@@ -45,7 +45,7 @@
 
 			<div class="ml-5">
 				<a href="/" class="flex items-center gap-3 link">
-					<img src="/favicon.png" alt="" width="50px" />
+					<img src="/logo-light.png" alt="" width="50px" />
 					<span class="text-2xl font-semibold">OpenRegistry</span>
 				</a>
 
