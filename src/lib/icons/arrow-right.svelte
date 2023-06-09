@@ -1,4 +1,5 @@
 <script>
+	export let color = "#50557c";
 </script>
 
 <svg
@@ -8,7 +9,7 @@
 	stroke-width="1.5"
 	width="20"
 	height="24"
-	color="#50557c"
+	color={color}
 	><defs
 		><style>
 			.cls-63ce7424ea57ea6c8380058e-1 {

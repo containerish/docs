@@ -15,9 +15,9 @@
 				OpenRegistry is an open source and decentralised container registry. Powered by Web3
 				community, we have been able to build project you can rely on.
 			</span>
-			<a href="/get-started" class="flex gap-3">
+			<a href="/get-started" class="flex gap-3 !text-primary-900-50-token">
 				<span>View docs</span>
-				<ArrowRight />
+				<ArrowRight color="#" />
 			</a>
 		</div>
 	</div>
@@ -30,12 +30,11 @@
 				Are you new to OpenRegistry or Container registries in general? Do you want to learn more
 				about containers and container registries before proceeding with the documentaion?
 			</p>
-			<div class="fl">
-				<p class=" antialiased text-lg">
-					We have the perfect starter documentation with cute little zines check them out
-				</p>
-				<a href="/zines">here</a>
-			</div>
+
+			<p class=" antialiased text-lg">
+				We have the perfect starter documentation with cute little zines check them out
+				<a href="/zines" class="!text-indigo-700 text-lg">here</a>
+			</p>
 		</div>
 		<img src="/zine-docs.png" alt="zine docs" width="500px" />
 	</div>
@@ -92,7 +91,7 @@
 				confromance specification, which means the functionality and using CLI with OpenRegistry is
 				just like any other container registry Explore documentation
 			</p>
-			<a href="/get-started" class="flex gap-3">
+			<a href="/get-started" class="flex gap-3 !text-primary-900-50-token">
 				<span>Explore Documentation</span>
 				<ArrowRight />
 			</a>
@@ -110,12 +109,13 @@
 				OpneRegistry is built and maintained by 2 developers. We are learning everyday and doing our
 				best to make OpenRegistry the best container registry out there and we need your support in
 				accomplishing it. If you spot a bug, typo or any other inconsistency across the platform and
-				documentation, please report it in our github discussion or write to</p> 
-				<p class="text-lg antialiased"> 
-				We welcome cunstructive criticism too, as it will help us become better. So don't hold back in
-				any case. Lastly, thanks a lot for visiting, we hope you find this documentation informative.
+				documentation, please report it in our github discussion or write to
+			</p>
+			<p class="text-lg antialiased">
+				We welcome cunstructive criticism too, as it will help us become better. So don't hold back
+				in any case. Lastly, thanks a lot for visiting, we hope you find this documentation
+				informative.
 			</p>
 		</div>
-		
 	</div>
 </div>
