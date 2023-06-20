@@ -1,6 +1,11 @@
+.DS_Store
 node_modules
-.temp
-.cache
-docs/.vuepress/dist
-docs/.vuepress/.temp
-docs/.vuepress/.cache
+/build
+/.svelte-kit
+/package
+.env
+.env.*
+!.env.example
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+/.vscode
