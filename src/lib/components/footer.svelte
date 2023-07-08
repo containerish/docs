@@ -6,14 +6,14 @@
 <div
 	class="py-3 bg-indigo-950 dark:bg-surface-800 text-primary-100 z-10 border-t border-t-surface-500"
 >
-	<div class="mx-auto px-0 lg:px-10 py-20">
-		<div class="flex items-center justify-between gap-12 lg:gap-0">
-			<div class="mb-0 flex flex-col lg:flex-row gap-3">
+	<div class="mx-auto px-0 lg:px-10 lg:py-20 py-6">
+		<div class="flex items-center justify-between gap-6 lg:gap-0">
+			<div class="mb-0 ml-3 flex flex-col lg:flex-row gap-3">
 				<a
 					href="https://blog.openregistry.dev"
 					target="_blank"
 					rel="noreferrer"
-					class="link text-4xl tracking-tight"
+					class="link text-3xl lg:text-4xl tracking-tight"
 				>
 					Blog,
 				</a>
@@ -21,7 +21,7 @@
 					href="https://github.com/containerish/openregistry"
 					target="_blank"
 					rel="noreferrer"
-					class="link text-4xl tracking-tight"
+					class="link text-3xl lg:text-4xl tracking-tight"
 				>
 					Github,
 				</a>
@@ -29,7 +29,7 @@
 					href="https://twitter.com/containerish"
 					target="_blank"
 					rel="noreferrer"
-					class="link text-4xl tracking-tight"
+					class="link text-3xl lg:text-4xl tracking-tight"
 				>
 					Twitter,
 				</a>
@@ -37,7 +37,7 @@
 					href="https://discord.gg/Mx8HAazrHc"
 					target="_blank"
 					rel="noreferrer"
-					class="link text-4xl tracking-tight"
+					class="link text-3xl lg:text-4xl tracking-tight"
 				>
 					Discord
 				</a>
@@ -46,7 +46,7 @@
 			<div class="ml-5">
 				<a href="/" class="flex items-center gap-3 link">
 					<img src="/logo-light.png" alt="" width="50px" />
-					<span class="text-2xl font-semibold">OpenRegistry</span>
+					<span class="text-xl lg:text-2xl font-semibold">OpenRegistry</span>
 				</a>
 
 				<p class="mt-2 max-w-md text-sm antialiased">

@@ -5,10 +5,17 @@
 	import '@skeletonlabs/skeleton/styles/all.css';
 	// Most of your app wide CSS should be put in this file
 	import '../../app.postcss';
-	import { AppBar, AppShell, Drawer, LightSwitch, drawerStore } from '@skeletonlabs/skeleton';
+	import {
+		AppBar,
+		AppShell,
+		Drawer,
+		LightSwitch,
+		drawerStore,
+		getModeUserPrefers
+	} from '@skeletonlabs/skeleton';
 	import Sidebar from '$lib/components/sidebar.svelte';
 	import Footer from '$lib/components/footer.svelte';
-	import ArrowRight from '$lib/icons/arrow-right.svelte';
+	import MenuIcon from '$lib/icons/menu.svelte';
 	import type { DrawerSettings } from '@skeletonlabs/skeleton';
 	import { afterNavigate, beforeNavigate } from '$app/navigation';
 	const handleDrawer = () => {
@@ -22,9 +29,19 @@
 	afterNavigate(() => {
 		drawerStore.close();
 	});
+
+	let logo = getModeUserPrefers() ? '/logo.png' : '/logo-light.png';
+
+	const handleLogo = () => {
+		if (getModeUserPrefers()) {
+			logo = '/logo.png';
+		} else {
+			logo = '/logo-light.png';
+		}
+	};
 </script>
 
-<Drawer bgDrawer="bg-primary-50-900-token" blur="backdrop-blur-xs" width="w-80" class="lg:hidden">
+<Drawer bgDrawer="bg-primary-50-900-token" blur="backdrop-blur-xs" width="w-72" class="lg:hidden">
 	<div data-sveltekit-reload class="flex flex-col items-start w-full p-6">
 		<a href="/get-started" class="text-lg font-semibold">Get Started</a>
 		<ul class="">
@@ -155,25 +172,30 @@
 	<svelte:fragment slot="header">
 		<AppBar
 			background="border-b-2 border-primary-100-800-token"
-			padding="py-3 px-6"
+			padding="py-3 px-3"
 			shadow="shadow-sm"
+			gap="gap-14 lg:gap-1"
 		>
 			<svelte:fragment slot="lead">
 				<button
 					on:click={handleDrawer}
 					type="button"
-					class="btn variant-soft bg-tertiary-300-600-token mr-20 rounded-full px-3 lg:hidden"
+					class="btn variant-soft bg-tertiary-300-600-token mr- rounded-full px-2.5 lg:hidden"
 				>
-					<ArrowRight />
+					<MenuIcon />
 				</button>
+			</svelte:fragment>
+			<svelte:fragment>
 				<a href="/" class="flex gap-1 items-center"
-					><img src="/favicon.png" alt="" width="50px" />
-					<span class="ml-3 text-[#19195C] dark:text-primary-200 text-4xl font-semibold">
+					><img src={logo} alt="" width="50px" />
+					<span class="ml-2 text-[#19195C] dark:text-primary-200 text-4xl font-semibold">
 						Docs</span
 					></a
 				>
 			</svelte:fragment>
-			<svelte:fragment slot="trail"><LightSwitch rounded="rounded-full" /></svelte:fragment>
+			<svelte:fragment slot="trail"
+				><LightSwitch on:click={handleLogo} rounded="rounded-full" /></svelte:fragment
+			>
 		</AppBar>
 	</svelte:fragment>
 	<svelte:fragment slot="sidebarLeft">

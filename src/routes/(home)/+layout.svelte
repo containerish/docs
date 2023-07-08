@@ -7,6 +7,7 @@
 	import '../../app.postcss';
 	import { AppBar, AppShell, LightSwitch, getModeUserPrefers } from '@skeletonlabs/skeleton';
 	import Footer from '$lib/components/footer.svelte';
+	
 	let logo = getModeUserPrefers() ? '/logo.png' : '/logo-light.png';
 
 	const handleLogo = () => {

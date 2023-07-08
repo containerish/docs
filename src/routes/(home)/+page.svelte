@@ -22,25 +22,25 @@
 		</div>
 	</div>
 	<div
-		class="card p-20 flex flex-col lg:flex-row justify-between items-center gap-9 bg-gradient-to-br from-primary-500 to-secondary-500 dark:from-primary-800 dark:to-secondary-900 shadow"
+		class="card p-6 lg:p-20 flex flex-col lg:flex-row justify-between items-center gap-9 bg-gradient-to-br from-primary-500 to-secondary-500 dark:from-primary-800 dark:to-secondary-900 shadow"
 	>
 		<div class="flex flex-col gap-3 text-surface-900-50-token max-w-lg">
 			<span class="text-3xl font-semibold antialiased">Hello There!!</span>
-			<p class=" antialiased text-lg">
+			<p class=" antialiased lg:text-lg">
 				Are you new to OpenRegistry or Container registries in general? Do you want to learn more
 				about containers and container registries before proceeding with the documentaion?
 			</p>
 
 			<p class=" antialiased text-lg">
 				We have the perfect starter documentation with cute little zines check them out
-				<a href="/zines" class="!text-indigo-700 text-lg">here</a>
+				<a href="/zines" class="!text-secondary-800-100-token text-lg font-semibold">here</a>
 			</p>
 		</div>
 		<img src="/zine-docs.png" alt="zine docs" width="500px" />
 	</div>
 	<div class="flex flex-col lg:flex-row gap-3">
 		<div
-			class="card lg:w-1/3 bg-primary-100/60 dark:bg-surface-900/30 px-9 py-12 flex flex-col gap-9 items-start max-w-md shadow-lg"
+			class="card lg:w-1/3 bg-primary-100/60 dark:bg-surface-900/30 p-6 lg:px-9 lg:py-12 flex flex-col gap-3 lg:gap-9 items-start max-w-md shadow-lg"
 		>
 			<Opensource />
 			<div class="flex flex-col gap-2">
@@ -52,7 +52,7 @@
 			</div>
 		</div>
 		<div
-			class="card lg:w-1/3 bg-primary-100/60 dark:bg-surface-900/30 p-9 flex flex-col gap-9 items-start max-w-md shadow-lg text-surface-900-50-token"
+			class="card lg:w-1/3 bg-primary-100/60 dark:bg-surface-900/30 p-6 lg:p-9 flex flex-col gap-3 lg:gap-9 items-start max-w-md shadow-lg text-surface-900-50-token"
 		>
 			<Distributed />
 			<div class="flex flex-col gap-2">
@@ -65,7 +65,7 @@
 			</div>
 		</div>
 		<div
-			class="card lg:w-1/3 bg-primary-100/60 dark:bg-surface-900/30 p-9 flex flex-col gap-9 items-start max-w-md shadow-lg"
+			class="card lg:w-1/3 bg-primary-100/60 dark:bg-surface-900/30 p-6 lg:p-9 flex flex-col gap-3 lg:gap-9 items-start max-w-md shadow-lg"
 		>
 			<Earth />
 			<div class="flex flex-col gap-2">
@@ -81,12 +81,12 @@
 	</div>
 
 	<div
-		class="card bg-gradient-to-br from-primary-500/50 to-tertiary-500/50 dark:from-primary-800/60 dark:to-tertiary-900/60 shadow p-20 flex flex-col
+		class="card bg-gradient-to-br from-primary-500/50 to-tertiary-500/50 dark:from-primary-800/60 dark:to-tertiary-900/60 shadow p-6 lg:p-20 flex flex-col
 			lg:flex-row justify-between items-center gap-9 relative"
 	>
-		<div class="  flex flex-col gap-3 text-surface-900-50-token max-w-lg">
+		<div class="flex flex-col gap-3 text-surface-900-50-token max-w-lg">
 			<span class="text-3xl font-semibold antialiased">Get Started</span>
-			<p class=" antialiased text-lg">
+			<p class=" antialiased lg:text-lg">
 				Its super easy to get started with OpenRegistry. OpenRegistry is compliant with OCI
 				confromance specification, which means the functionality and using CLI with OpenRegistry is
 				just like any other container registry Explore documentation
@@ -101,7 +101,7 @@
 	</div>
 
 	<div
-		class="bg-primary-100/60 dark:bg-surface-900 p-20 rounded flex flex-col lg:flex-row justify-between items-baseline gap-9"
+		class="bg-primary-100/60 dark:bg-surface-900 p-6 lg:p-20 rounded flex flex-col lg:flex-row justify-between items-baseline gap-9"
 	>
 		<span class="text-3xl font-semibold antialiased"> A Humble Note </span>
 		<div class="lg:w-1/2">
@@ -119,3 +119,4 @@
 		</div>
 	</div>
 </div>
+
